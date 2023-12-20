@@ -8,7 +8,7 @@ library(sysfonts)
 #par(family="NanumGothic")
 
 df <- read.csv(here('./Data/Site_Size.csv'))
-df <- subset(df, df$유형 == "토광묘")
+df <- subset(df, df$유형 == "토광묘" | df$유형 == "주구토광묘" | df$유형 == "분구묘")
 SiteName <- paste(df$유적명, df$유구명)
 Type <- df$유형
 Length <- as.numeric(df$길이.m.)
