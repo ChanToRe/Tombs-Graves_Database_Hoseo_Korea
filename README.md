@@ -1,34 +1,31 @@
 <img src="https://user-images.githubusercontent.com/64909586/186408061-58a88e85-be08-47f2-b3b3-2c9e04a9dec6.png" height=65>
 
-# 삼국시대 청주지역 소형토광묘 연구
+# 원삼국시대~삼국시대 호서지역 분묘 데이터베이스
 
 ---
 
 ## 소개
-이 레포지토리는 숭실대학교 대학원 사학과(고고학 전공) 여름방학 세미나 '소형토광묘 연구'의 데이터, 그래프, 코드를 정리한 레포지토리입니다.
+이 레포지토리는 원삼국시대~삼국시대 호서지역의 분묘유적을 정리한 데이터베이스입니다.
+데이터베이스 작성에는 주찬혁(숭실대학교박물관), 김태연(숭실대학교 석사수료), 이선연(수도문물연구원), 장연은(수도문물연구원), 김민하(숭실대학교 사학과 2학년)가 참여하였습니다.
 
-레포지토리는 크게 3개의 디렉토리로 구성되어 있습니다. `Data`에는 연구에 사용된 데이터가 있고, `Script`에는 분석 및 그래프 산출을 위한 R코드가 있으며, `Graph`에는 최종적으로 산출된 도면이 있습니다. 본문에 사용되지 않은 그래프 및 스크립트는 각 `NotUsed` 폴더에 존재합니다.
+레포지토리는 크게 3개의 디렉토리로 구성되어 있습니다. `Data`에는 분묘유적의 좌표, 분묘 유구의 제원, 출토유물이 정리되어 있습니다. `Script`에는 그중 토광묘의 제원을 산점도로 출력하는 스크립트가 있습니다. `Graph`에는 토광묘의 제원을 산점도로 시각화한 도면이 있습니다.
+
 
 ---
 
 ## 파일구조
 
 ```
-📦Hoseo_Small_Pit-Tombs
+📦Tombs&Graves_Database_Hoseo_Korea
  ┣ 📂Data
+ ┃ ┣ 📜Excavated_relics.csv
  ┃ ┣ 📜Site_Coordinate.csv
  ┃ ┗ 📜Site_Size.csv
  ┣ 📂Graph
- ┃ ┣ 📜Fig1_호서지역 분묘유적 분포도.tiff
- ┃ ┣ 📜Pit_Point(문암신봉).tiff
- ┃ ┣ 📜Pit_Point(문암신봉제외).tiff
- ┃ ┣ 📜Pit_Point(전체).tiff
- ┃ ┗ 📜청주 문암동 분묘유적 분포도.tif
+ ┃ ┣ 📜ScatterPlot.tiff
+ ┃ ┗ 📜Sitemap.tiff
  ┣ 📂Script
- ┃ ┣ 📜Pit_Scatter(문암신봉).R
- ┃ ┣ 📜Pit_Scatter(문암신봉제외).R
  ┃ ┗ 📜Pit_Scatter(전체).R
- ┣ 📜.DS_Store
  ┣ 📜.gitignore
  ┗ 📜README.md
 ```
